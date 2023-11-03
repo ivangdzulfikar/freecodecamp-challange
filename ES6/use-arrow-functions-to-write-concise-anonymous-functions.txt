@@ -1,0 +1,23 @@
+// var magic = function() {
+//   return new Date();
+// };
+
+const magic = () => new Date();
+console.log(magic())
+
+// supaya data tidak bisa di akses dari luar
+// const myFunc = function() {
+//   let myVar = "ini adalah nilai function"
+//   return myVar;
+// }
+
+// ES6 Format Arrow Function
+// const myFunc = () => {
+//  let myVar = "ini adalah nilai function";
+//   return myVar
+// }
+
+// ES6 Format Arrow Function when there's no function body and only return value
+// const myFunc = (test) => `Ini adalah nilai function ${test}`;
+
+// console.log(myFunc("baru"))

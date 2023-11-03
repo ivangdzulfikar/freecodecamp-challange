@@ -1,0 +1,29 @@
+// const sum = (x, y, z) => {
+//   const args = [x, y, z];
+//   let total = 0;
+//   for (let i = 0; i < args.length; i++) {
+//     total += args[i];
+//   }
+//   return total;
+// }
+
+// console.log(sum(1,2,3,10))
+
+const sum = (...args) => {
+  let total = 0;
+  for(let i = 0; i < args.length; i++) {
+    total += args[i];
+    console.log(total)
+  }
+  return total;
+}
+
+console.log(sum(1,2,4,5,6))
+
+//rest parameter = ...params
+// function howMany(...args) {
+  
+//   return "You have passed " + args.length + " arguments.";
+// }
+// console.log(howMany(0, 1, 2));
+// console.log(howMany("string", "kjasd", [1, 2, 3], { }));
